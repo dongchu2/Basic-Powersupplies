@@ -1,3 +1,14 @@
 Methods to buck 5V DC into 3.3V DC 
-1. Use of LDO regulators
 
+1. LDO Regulators (5V to 3.3V)
+
+Most Used Types
+
+1117 Series (AMS1117-3.3, LM1117-3.3):The classic, cheap workhorse (up to 1A). Higher dropout (~1.2V) but easily handles 5V to 3.3V.
+MCP1825 / MCP1804:** Low-quiescent, low-dropout options from Microchip.
+
+TLV704 / TLV713:Ultra-low quiescent current, tiny footprint parts from TI.
+AP2112 / AP7333:Popular in IoT/hobbyist boards (like ESP32) for low noise and good transients.
+
+What You Need to Simulate in LTspice
+LDO Model:Use built-in parts (search `1117` via `F2`) 
